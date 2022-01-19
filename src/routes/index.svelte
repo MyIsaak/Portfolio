@@ -2,7 +2,7 @@
 	import 'bamboo.css';
 
 	function sendEmail() {
-		location.href = Buffer.from('bWFpbHRvOmNvbnRhY3RAbXlpc2Fhay50ZWNo', 'base64').toString();
+		location.href = decodeURIComponent(escape(window.atob('bWFpbHRvOmNvbnRhY3RAbXlpc2Fhay50ZWNo')));
 	}
 </script>
 
